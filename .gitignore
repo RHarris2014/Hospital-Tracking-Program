@@ -1,32 +1,68 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+using namespace std;
 
-# Precompiled Headers
-*.gch
-*.pch
+int main()
+{
+    char answer;
+  /*  char answer1;
+    char answer2;
+    int age;
+    int mrn;
+    char dnrcca; */
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+    string name;
+    cout << "Welcome to Trauma Service Confidential: Peer Review" << endl;
+    cout << endl;
+    cout << "Please enter your name: ";
+    getline(cin, name);
+    cout << endl;
+    cout << "Hello, " << name << "! Welcome back!" << endl;
+    cout << endl;
+    cout << "Do you need to enter new information on a patient?: ";
+    cin >> answer; //Make this a 'yes or no' option. If the user selects 'yes' then have them go on and input more information
+    cout << endl;               //if they type 'no' then print a "Goodbye!" message
+                   //If neither "yes" or "no" then print an 'error' message like, "Invalid Option
+                   //... and let them try again!
 
-# Fortran module files
-*.mod
-*.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+    cout << "Please type in the following information for your patient..." << endl;
+    cout << endl;
+    cout << "Patient's Name: "; //somehow enter the patients name into the code. figure out
+    char answer1;
+    cout << endl;
+    cout << "Date of birth (mm//dd/yyyy): ";
+    char answer2;
+    cout << endl;
+    cout << "Patients age: "; //find out how to convert this automatically from the birthdate... sort of like how it's done on my excel spreadsheet
+    int age;
+    cout << endl;
+    cout << "MRN: ";
+    int mrn;
+    cout << endl;
+    cout << "DNR-CCA?: ";
+    char dnrcca;
+    cout << endl;
+    cout << "DNR-CC?: ";
+    char dnrcc;
+    cout << endl;
 
-# Executables
-*.exe
-*.out
-*.app
+
+
+
+    return 0;
+}
+
+int main2(){
+
+    char answer;
+
+    cout << "Please type in the following information for your patient..." << endl;
+    cout << endl;
+    cout << "Patient's Name: ";
+    cin >> answer;
+    cout << endl;
+
+    return 0;
+    }
+//Was there a 'spleen injury?' y = Was practice management guidlines followed? --> yes/no
